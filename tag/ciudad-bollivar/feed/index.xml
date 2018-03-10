@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Ciudad Bollívar &#8211; Fundación Bella Flor</title>
+	<atom:link href="/tag/ciudad-bollivar/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Entidad sin ánimo de lucro. Ciudad Bolívar, Bogotá, Colombia</description>
+	<lastBuildDate>Tue, 27 Feb 2018 22:03:28 +0000</lastBuildDate>
+	<language>es-ES</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.5</generator>
+	<item>
+		<title>La Descentralización a la luz del caso Bella Flor</title>
+		<link>/2010/07/la-descentralizacion-a-la-luz-del-caso-bella-flor/</link>
+		<pubDate>Mon, 26 Jul 2010 17:25:43 +0000</pubDate>
+		<dc:creator><![CDATA[Ana María Araos Casas]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Ciudad Bollívar]]></category>
+		<category><![CDATA[Investigaciones]]></category>
+
+		<guid isPermaLink="false">/?p=146</guid>
+		<description><![CDATA[Bogotá alberga desde la década de los ochenta a miles de desplazados de todas partes del país sin contar con la infraestructura necesaria para ello. Normalmente, el asentamiento de estas personas se da en zonas de difícil acceso y en &#8230; <a href="/2010/07/la-descentralizacion-a-la-luz-del-caso-bella-flor/">Continuar leyendo <span class="meta-nav">&#187;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Bogotá alberga desde la década de los ochenta a miles de desplazados de todas partes del país sin contar con la infraestructura necesaria para ello. Normalmente, el asentamiento de estas personas se da en zonas de difícil acceso y en riesgo de desastre natural, dado que no tienen las condiciones para una vivienda adecuada. Es el caso del barrio Bella Flor en Ciudad Bolívar, un asentamiento ilegal que tuvo su origen en 1985 en la carretera que conduce a la vereda de Quiba.</p>
+<p>Aunque hoy en día el barrio cuenta con algunos de los servicios básicos, la pobreza es críticoa en comparación con los índices del resto de la localidad de Ciudad Bolívar, de Bogotá y de Colombia. Al menos eso es lo que se desprende de los censos y encuestas realizadas en 2000 y 2003, analizadas por Jean Philippe Pening en el estudio <em>La descentralización a la luz del caso Bella Flor en Ciudad Bolívar, Bogotá </em>realizado en el año 2005. En éste, Penning utiliza diferentes indicadores de pobreza –que incluyen tanto la capacidad productiva como otros factores de calidad de vida- para mostrar que aunque la descentralización ha traído grandes beneficios para Bogotá, la desigualdad entre sectores, localidades o barrios sigue siendo grande. En casos como el de Bella Flor, los índices de miseria y pobreza rebasan por mucho los que presentan otros barrios de la misma Ciudad Bolívar u otras zonas de Bogotá y se muestra rezagado incluso con respecto a las mediciones a nivel nacional.</p>
+<p>Ver artículo completo en:<br />
+<a href="http://www.fce.unal.edu.co/cuadernos/43/Docs/articulos/8%20PeningJP%20CuaEco%2043.pdf">http://www.fce.unal.edu.co/cuadernos/43/Docs/articulos/8%20PeningJP%20CuaEco%2043.pdf</a></p>
+<p>Autor:</p>
+<p>Jean Philippe Pening (2005)</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

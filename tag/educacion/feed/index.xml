@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Educación &#8211; Fundación Bella Flor</title>
+	<atom:link href="/tag/educacion/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Entidad sin ánimo de lucro. Ciudad Bolívar, Bogotá, Colombia</description>
+	<lastBuildDate>Tue, 27 Feb 2018 22:03:28 +0000</lastBuildDate>
+	<language>es-ES</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.5</generator>
+	<item>
+		<title>Educación para la movilidad social</title>
+		<link>/2010/07/educacion-para-la-movilidad-social/</link>
+		<pubDate>Mon, 26 Jul 2010 17:51:18 +0000</pubDate>
+		<dc:creator><![CDATA[Ana María Araos Casas]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Educación]]></category>
+		<category><![CDATA[Investigaciones]]></category>
+
+		<guid isPermaLink="false">/?p=172</guid>
+		<description><![CDATA[“Es un hecho conocido que América Latina ofrece limitadas oportunidades de progreso económico y de movilidad social a la mayoría de sus habitantes. Esta situación se refleja en avances insuficientes en un conjunto de indicadores sociales. Lo anterior ha confluido &#8230; <a href="/2010/07/educacion-para-la-movilidad-social/">Continuar leyendo <span class="meta-nav">&#187;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>“Es un hecho conocido que América Latina ofrece limitadas oportunidades de progreso económico y de movilidad social a la mayoría de sus habitantes. Esta situación se refleja en avances insuficientes en un conjunto de indicadores sociales. Lo anterior ha confluido en una creciente frustración de la mayoría de los latinoamericanos por la lenta mejora en su calidad de vida y la percepción de muy escasas oportunidades de ascenso social.”</p>
+<p>Este informe de la CAF hace un análisis extensivo de la situación social que enfrenta la región de Latinoamérica. En el capítulo 3 se estudia la movilidad social a través de la educación, qué tanto dependen los logros educativos de una persona de sus padres y qué se puede hacer para mejorar esto. Colombia se encuentra entre los países analizados.</p>
+<p>Ver artículo completo en:<br />
+<a href="http://www.caf.com/view/index.asp?ms=17&amp;pageMs=47162">http://www.caf.com/view/index.asp?ms=17&amp;pageMs=47162</a></p>
+<p>Autor:</p>
+<p>Corporación Andina de Fomento – CAF (2007)</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

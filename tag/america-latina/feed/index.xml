@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>América Latina &#8211; Fundación Bella Flor</title>
+	<atom:link href="/tag/america-latina/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Entidad sin ánimo de lucro. Ciudad Bolívar, Bogotá, Colombia</description>
+	<lastBuildDate>Tue, 27 Feb 2018 22:03:28 +0000</lastBuildDate>
+	<language>es-ES</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.5</generator>
+	<item>
+		<title>La pobreza infantil en América Latina</title>
+		<link>/2010/07/la-pobreza-infantil-en-america-latina/</link>
+		<pubDate>Mon, 26 Jul 2010 17:37:25 +0000</pubDate>
+		<dc:creator><![CDATA[Ana María Araos Casas]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[América Latina]]></category>
+		<category><![CDATA[Investigaciones]]></category>
+		<category><![CDATA[Pobreza]]></category>
+
+		<guid isPermaLink="false">/?p=152</guid>
+		<description><![CDATA[Aspirar a combatir la pobreza en su forma general en el presente y futuro requiere abordar el tema de la pobreza infantil, pues ésta condena a su reproducción entre generaciones, y restringe dramáticamente las posibilidades de desarrollar capacidades y plasmar &#8230; <a href="/2010/07/la-pobreza-infantil-en-america-latina/">Continuar leyendo <span class="meta-nav">&#187;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Aspirar a combatir la pobreza en su forma general en el presente y futuro requiere abordar el tema de la pobreza infantil, pues ésta condena a su reproducción entre generaciones, y restringe dramáticamente las posibilidades de desarrollar capacidades y plasmar oportunidades a lo largo de toda la vida. La UNICEF realiza un análisis de la pobreza infantil en América Latina utilizando un enfoque relativo, es decir, examinando el bienestar de los niños y niñas en comparación con el resto de la población y de sus cambios en el tiempo.</p>
+<p>La conclusión más importante es que el aumento de la pobreza infantil en la mayoría de los países está más relacionado con la concentración del ingreso, que con su nivel. Esto es especialmente relevante pues América Latina presenta los mayores niveles de desigualdad en el mundo y los sistemas de protección social son todavía incipientes y de baja cobertura. El artículo menciona una serie de aspectos que debe tener en cuenta la política pública para reducir la pobreza infantil en Colombia.</p>
+<p>Ver artículo completo en:<br />
+<a href="http://www.unicef.org/lac/Desafios_n1_Sept2005-esp(3).pdf">http://www.unicef.org/lac/Desafios_n1_Sept2005-esp(3).pdf</a><br />
+Autor:Unicef (2005)</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

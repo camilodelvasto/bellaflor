@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Orizel Llanos &#8211; Fundación Bella Flor</title>
+	<atom:link href="/author/orizel-llanos/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Entidad sin ánimo de lucro. Ciudad Bolívar, Bogotá, Colombia</description>
+	<lastBuildDate>Tue, 27 Feb 2018 22:03:28 +0000</lastBuildDate>
+	<language>es-ES</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.5</generator>
+	<item>
+		<title>¡Bazar comunidad Bella Flor!</title>
+		<link>/2011/09/%c2%a1bazar-comunidad-bella-flor/</link>
+		<pubDate>Fri, 16 Sep 2011 02:03:28 +0000</pubDate>
+		<dc:creator><![CDATA[Orizel Llanos]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://www.bellaflor.org/?p=903</guid>
+		<description><![CDATA[Los papás y las mamás de nuestros niños han tomado la iniciativa de realizar un BAZAR para recoger recursos para la Navidad y para crear un fondo de apoyo para las familias de Bella Flor afectadas por el invierno. Es el &#8230; <a href="/2011/09/%c2%a1bazar-comunidad-bella-flor/">Continuar leyendo <span class="meta-nav">&#187;</span></a>]]></description>
+				<content:encoded><![CDATA[<p><span style="text-decoration: underline;">Los papás y las mamás</span> de nuestros niños han tomado la iniciativa de realizar un BAZAR para recoger recursos<strong> </strong>para la Navidad y para crear un fondo de apoyo para las familias de Bella Flor afectadas por el invierno. Es el primer proyecto que realizan como equipo y nos hacen un llamado a todos nosotros para que les demos una mano con la logística y de paso con las ventas, para que el proyecto sea todo un éxito.</p>
+<blockquote><p><strong>¡Queremos que papás y mamás tengan también una experiencia de éxito!</strong></p></blockquote>
+<p><strong>Fecha: </strong>Domingo 18 de septiembre</p>
+<p><strong>Hora: </strong>9:00am – 12:00m</p>
+<p><strong>Lugar: </strong>Fundación Bella Flor</p>
+<p><strong>Punto de encuentro: </strong>Portal del Tunal de Trasmilenio a las 8:00 AM</p>
+<p><strong>Contacto: </strong>Carolina Guzmán: <a href="mailto:carolina@bellaflor.org" target="_blank"></a><a href="mailto:carolina@bellaflor.org" target="_blank"></a><a href="mailto:carolina@bellaflor.org" target="_blank">carolina@bellaflor.org</a></p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,1755 @@
+/*
+Theme Name: Bella Flor
+Theme URI: http://startics.com
+Description: The 2010 theme for Bella Flor Foundation
+Author: Startics
+Version: 1.0
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
+*/
+
+/* startics do+sp */
+
+/* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+html{height:100%;padding-bottom:1px;}
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img { border: none; }
+
+
+
+/*
+LAYOUT: Two columns
+DESCRIPTION: Two-column fixed layout with one sidebar right of content
+*/
+
+#container {
+	float: left;
+	margin: 0 -240px 0 0;
+	width: 100%;
+}
+#content {
+	margin: 0;
+}
+#primary,
+#secondary {
+	float: right;
+	overflow: hidden;
+	width: 250px;
+}
+#secondary {
+	clear: right;
+}
+#footer {
+	clear: both;
+	width: 100%;
+}
+
+/*
+LAYOUT: One column, no sidebar
+DESCRIPTION: One centered column with no sidebar
+*/
+
+.one-column #content {
+	margin: 0 auto;
+	width: 640px;
+}
+
+/*
+LAYOUT: Full width, no sidebar
+DESCRIPTION: Full width content with no sidebar; used for attachment pages
+*/
+
+.single-attachment #content {
+	margin: 0 auto;
+	width: 900px;
+}
+
+
+/* =Fonts
+-------------------------------------------------------------- */
+body,
+input,
+textarea,
+.page-title span,
+.pingback a.url {
+	font-family: Arial,sans-serif;
+}
+
+h3#comments-title,
+h3#reply-title,
+#access .menu,
+#access div.menu ul,
+#cancel-comment-reply-link,
+.form-allowed-tags,
+#site-info,
+#site-title,
+#wp-calendar,
+.comment-meta,
+.comment-body tr th,
+.comment-body thead th,
+.entry-content label,
+.entry-content tr th,
+.entry-content thead th,
+.entry-meta,
+.entry-title,
+.entry-utility,
+#respond label,
+.navigation,
+.page-title,
+.pingback p,
+.reply,
+.widget-title,
+.wp-caption-text,
+input[type=submit]
+{
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+code {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+
+
+/* =Structure
+-------------------------------------------------------------- */
+
+/* The main theme structure */
+#access .menu-header,
+div.menu,
+#colophon,
+#branding,
+#main,
+#wrapper {
+	margin: 0 auto;
+	width: 940px;
+}
+#wrapper {
+	margin-top: 0px;
+	background: #fff;
+	padding: 0 0px;
+	width:1001px;
+	background: #fff url(/wp-content/themes/BellaFlorV1.0/images/body-bg.png) repeat-y;
+}
+
+/* Structure the footer area */
+#footer-widget-area {
+	overflow: hidden;
+}
+#footer-widget-area .widget-area {
+	float: left;
+	margin-right: 20px;
+	width: 220px;
+}
+#footer-widget-area #fourth {
+	margin-right: 0;
+}
+#site-info {
+	float: left;
+	width: 700px;
+	font-weight: bold;
+	font-size: 14px;
+}
+#site-generator {
+	float: right;
+	width: 220px;
+}
+
+
+
+/* =Global Elements
+-------------------------------------------------------------- */
+
+/* Main global 'theme' and typographic styles  */
+body {
+	background: #fff;
+	margin:0;
+	padding:0;
+}
+
+body,
+input,
+textarea {
+	color: #111;
+	font-size: 12px;
+	line-height: 18px;
+}
+hr {
+	background-color: #E7E7E7;
+	border:0;
+	height: 1px;
+	margin-bottom: 18px;
+	clear:both;
+}
+
+/* Text elements */
+p {
+	margin-bottom: 18px;
+}
+ul {
+	list-style: disc inside;
+	margin: 0 0 18px 1.5em;
+}
+ol {
+	list-style: decimal;
+	margin: 0 0 18px 1.5em;
+}
+ol ol {
+	list-style:upper-alpha;
+}
+ol ol ol {
+	list-style:lower-roman;
+}
+ol ol ol ol {
+	list-style:lower-alpha;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin-bottom:0;
+}
+dl {
+	margin:0 0 24px 0;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 18px;
+}
+strong {
+	font-weight: bold;
+}
+cite,
+em,
+i {
+	font-style: italic;
+}
+big {
+	font-size: 131.25%;
+}
+ins {
+	background: #ffc;
+	text-decoration: none;
+}
+blockquote {
+	font-style: italic;
+	padding: 0 3em;
+}
+blockquote cite,
+blockquote em,
+blockquote i {
+	font-style: normal;
+}
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	position: relative;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+input[type="text"],
+textarea {
+	padding: 2px;
+	background: #f9f9f9;
+	border: 1px solid #ccc;
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+}
+a:link {
+	color:#006295;
+	text-decoration:none;
+}
+a:visited {
+	color:#006295;
+}
+a:active,
+a:hover {
+	text-decoration:underline;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	position: absolute;
+	left: -9000px;
+}
+
+
+.clear{clear:both;height:1px;overflow:hidden;}
+/* =Header
+-------------------------------------------------------------- */
+
+#header {
+	padding: 0;
+	margin:0 31px 0 30px;
+	height:136px;
+	position:relative;
+}
+#logo{
+	background:url(/wp-content/themes/BellaFlorV1.0/images/logo.png) no-repeat;
+	width:211px;
+	height:97px;
+	position:absolute;
+	top:20px;
+}
+#site-title {
+	float: left;
+	margin: 0 0 18px 0;
+	width: 700px;
+	font-size: 30px;
+	line-height: 36px;
+	background:url(/wp-content/themes/BellaFlorV1.0/images/logo.gif) no-repeat;
+}
+#site-title a {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	text-indent:-9999px;
+}
+#site-description {
+	clear: right;
+	float: right;
+	font-style: italic;
+	margin: 14px 0 18px 0;
+	width: 220px;
+}
+#banner-donate,#banner-goback{
+	background:url('/wp-content/themes/BellaFlorV1.0/images/banner-donate.png') no-repeat;
+	width:160px;
+	height:136px;
+	position:absolute;
+	top:0;
+	right:0;
+	margin-right:-19px;
+}
+#banner-goback{background-image:url(/wp-content/themes/BellaFlorV1.0/images/banner-goback.png);}
+
+
+/* STARTICS: TOPMENU */
+li#nav_menu-3{list-style-type:none;}
+#topmenu{float:right;margin-right:150px;display:inline;text-align:right;margin-top:10px;vertical-align:top;}
+.menu-top-menu-container{position:relative;}
+.menu-top-menu-container ul#menu-top-menu {height:10px;line-height:10px;}
+.menu-top-menu-container ul#menu-top-menu li{list-style-type:none;display:inline;margin-left:5px;border-right:1px solid #656465;padding-right:10px;}
+.menu-top-menu-container ul#menu-top-menu li a{color: #656465;text-decoration:none;}
+.menu-top-menu-container ul#menu-top-menu li a:hover{text-decoration:underline;}
+.menu-top-menu-container ul#menu-top-menu li#menu-item-13 {border:none;}
+.menu-top-menu-container ul#menu-top-menu li#menu-item-586 {border:none;}
+
+
+#home-topcontent{padding:0;margin:0;height:362px;}
+
+/* STARTICS: HOME SIDEBANNERS */ 
+#sidebanners{width:352px;height:362px;float:left;}
+.sidebanners{background:url(/wp-content/themes/BellaFlorV1.0/images/sidebanners.png) no-repeat;width:173px;height:184px;float:left;}
+#sidebanners-2.sidebanners {background-position:-173px 0;}
+#sidebanners-3.sidebanners {background-position:0 -184px;}
+#sidebanners-4.sidebanners {background-position:-173px -184px;}
+
+#sidebanners-1.sidebanners:hover {background-position:-351px 0;}
+#sidebanners-2.sidebanners:hover {background-position:-524px 0;}
+#sidebanners-3.sidebanners:hover {background-position:-351px -184px;}
+#sidebanners-4.sidebanners:hover {background-position:-524px -184px;}
+
+
+/* STARTICS: HOME SLIDESHOW */
+#slideshow{width:583px;height:354px;float:right;background:#f0f0f0;position:relative;margin-top:8px;margin-bottom:0px;overflow:hidden;}
+.container{position:relative;}
+#controls{position:absolute;bottom:0;}
+#slideshow .blackOverlay,#slideshow .noOverlay,#slideshow #controlOverlay,#slideshow #controlNoOverlay{position:absolute;z-index:100;bottom:80px;right:0;background:#000;width:530px;height:160px;opacity:0.3;filter:alpha(opacity=30);zoom:1;}
+#slideshow .noOverlay {opacity:1;filter:alpha(opacity=100);background:transparent;width:500px;height:130px;padding:15px;}
+#slideshow .noOverlay h2{color:#fff;font-weight:bold;font-size:30px;line-height:30px;text-align:right;margin-top:5px;}
+#slideshow .noOverlay h3{color:#fff;font-weight:normal;font-size:24px;line-height:24px;text-align:right;margin-bottom:0;}
+#slideshow #controlNoOverlay{opacity:1;filter:alpha(opacity=100)background:none;}
+#slideshow #controlOverlay,#slideshow #controlNoOverlay{width:156px;height:37px;bottom:0;left:50%;margin-left:-75px;}
+#slideshow #controlNoOverlay div.control {width:18px;height:18px;float:left;margin-left:8px;margin-right:5px;opacity:1;background:#fff;margin-top:10px;opacity:0.4;display:inline;filter:alpha(opacity=40)}
+#slideshow #controlNoOverlay div.control:hover,#slideshow #controlNoOverlay div.control.cntrl_active {width:22px;height:22px;float:left;margin-left:6px;margin-right:3px;opacity:1;filter:alpha(opacity=100)background:#fff;margin-top:8px;opacity:0.4;filter:alpha(opacity=40)}
+
+#slideshow a:link h3{text-decoration:none;}
+#slideshow a:hover{text-decoration:none;}
+.spacer{height:10px;font-size:2px;}
+
+
+/* STARTICS: HOME SIDE-PAPER - NUESTRAS OPORTUNIDADES */ 
+div.side-paper{float:left;line-height:normal;font-family:Geneva,Helvetica,arial,sans-serif;font-size:11px;display:inline;padding:0;}
+div.side-paper div.middle{height:486px;width:325px;overflow:hidden;padding:10px;background:url(/wp-content/themes/BellaFlorV1.0/images/side-paper1_middle.jpg) repeat-y;}
+div.side-paper div.top{background: url(/wp-content/themes/BellaFlorV1.0/images/side-paper1_top.jpg) repeat-x;width:345px;height:10px;font-size:4px;margin:0;padding:0;}
+div.side-paper div.bottom{background:url(/wp-content/themes/BellaFlorV1.0/images/side-paper1_bottom.jpg) no-repeat;width:345px;height:20px;}
+div.side-paper h2,div.side-paper h3{font-family:georgia,"times new roman",times,serif;font-weight:bold;}
+div.side-paper h2{padding:4px 0;border-top:3px double #000;border-bottom:1px solid #000;width:325px;font-weight:bold;font-size:19px;}
+div.side-paper h3 a{color:#000;}
+#content div.side-paper h3{margin:0;font-size:14px;}
+div.side-paper a:visited{text-decoration:none;}
+div.side-paper a{color:#f00;text-decoration:none;}
+div.side-paper a:hover{text-decoration:underline;}
+
+div.side-paper li{height:80px;width:325px;margin-bottom:10px;float:left;overflow:hidden;display:inline;}
+.post_thumbnail{float:left;width:64px;padding:0 20px 18px 10px;display:inline;}
+
+.nobullets li{list-style-type:none;}
+div.side-paper .readmore{}
+
+#home-rightcol{float:right;width:583px; overflow:hidden;margin-top:15px;}
+#home-leftcol{float:left;width:353px;overflow:hidden;margin-top:15px;}
+
+/* STARTICS: HOME CONNECT FOLLOW US SOCIAL NETWORKS */
+#connect{background:url(/wp-content/themes/BellaFlorV1.0/images/connect.png) no-repeat;width:213px;height:82px;float:left;padding-left:132px;padding-top:23px;}
+.connect_icon{background:url(/wp-content/themes/BellaFlorV1.0/images/connect-icons.png) no-repeat;width:35px;height:35px;float:left;margin-right:7px;}
+#connect-2{background-position:-42px 0;}
+#connect-3{background-position:-84px 0;}
+#connect-4{background-position:-126px 0;}
+#connect-5{background-position:-168px 0;}
+
+/* STARTICS: HOME CORCHO - NUESTRAS EXPERIENCIAS DE �XITO */
+div.corcho{width:305px;height:399px;background:url(/wp-content/themes/BellaFlorV1.0/images/corcho.jpg) no-repeat;float:left;}
+div.experiencias{width:128px;height:52px;background:url(/wp-content/themes/BellaFlorV1.0/images/experiencias-1.png) no-repeat;position:absolute;top:110px;left:43px;}
+div#experiencias-2{width:93px;height:81px;background:url(/wp-content/themes/BellaFlorV1.0/images/experiencias-2.png);top:215px;left:170px;}
+div#experiencias-3{width:86px;height:61px;background:url(/wp-content/themes/BellaFlorV1.0/images/experiencias-3.png);top:275px;left:40px;}
+
+/* STARTICS: HOME SIDE-PAPER 2 - BELLA FLOR EN ACCION */
+#home-side-paper2.side-paper{margin-bottom:20px;background:url(/wp-content/themes/BellaFlorV1.0/images/side-paper2.jpg) no-repeat;padding:52px 10px 20px; width:256px;height:320px;margin-right:0;float:right;}
+#home-side-paper2.side-paper li{width:256px;}
+#home-side-paper2.side-paper .date{color:#656465;float:right;font-style:italic;color:#000;opacity:0.3;}
+
+
+
+/* This is the custom header image */
+#branding img {
+	clear: both;
+	border-top: 4px solid #000;
+	display: block;
+	border-bottom: 1px solid #000;
+}
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+	margin: 0 auto;
+	width: 940px;
+	display:block;
+	float:left;
+	position:absolute;
+	bottom:0;
+	text-align:right;
+}
+#access .menu-header,
+div.menu {
+	font-size: 13px;
+	margin-left: 12px;
+}
+#access .menu-header ul,
+div.menu ul {
+	list-style: none;
+	margin: 0;
+}
+#access .menu-header li,
+div.menu li {
+	float:left;
+	position: relative;
+}
+#access a {
+	display:block;
+	text-decoration:none;
+	color:#aaa;
+	padding:0 10px;
+	line-height:38px;
+}
+#access ul ul {
+	display:none;
+	position:absolute;
+	top:38px;
+	left:0;
+	float:left;
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	width: 180px;
+	z-index: 99999;
+}
+#access ul ul li {
+	min-width: 180px;	
+}
+#access ul ul ul {
+	left:100%;
+	top:0;
+}
+#access ul ul a {
+	background:#333;
+	height:auto;
+	line-height:1em;
+	padding:10px;
+	width: 160px;
+}
+#access li:hover > a,
+#access ul ul :hover > a {
+	color:#fff;
+	background:#333;
+}
+#access ul li:hover > ul {
+	display:block;
+}
+#access ul li.current_page_item > a,
+#access ul li.current-menu-ancestor > a,
+#access ul li.current-menu-item > a,
+#access ul li.current-menu-parent > a {
+	color: #fff;
+}
+
+* html #access ul li.current_page_item a,
+* html #access ul li.current-menu-ancestor a,
+* html #access ul li.current-menu-item a,
+* html #access ul li.current-menu-parent a,
+* html #access ul li a:hover {
+	color:#fff;
+}
+
+/* STARTICS: MAIN MENU */
+#header{position:relative;padding:0;height:150px;}
+#mainmenu{width:800px;position:absolute;z-index:1000;bottom:0;right: 0;margin-right:10px;display:inline;}
+#mainmenu .menu-header ul{height:41px;margin:0;}
+#mainmenu .menu-header li{float:right;text-transform:uppercase;line-height:41px;height:41px;list-style-type:none;text-align:center;font-size:14px;}
+#mainmenu .menu-header li a{color:#000;text-decoration:none;line-height:41px;height:41px;}
+#mainmenu li:hover{background:url(/wp-content/themes/BellaFlorV1.0/images/mainmenu-hover.png) no-repeat;}
+
+#mainmenu li#menu-item-28{width:62px;font-weight:bold;margin-right:13px;}
+#mainmenu li#menu-item-28:hover{background-position:0px;}
+
+#mainmenu li#menu-item-191{width:100px;font-weight:bold;}
+#mainmenu li#menu-item-191:hover{background-position:-66px;}
+
+#mainmenu li#menu-item-23{width:193px;}
+#mainmenu li#menu-item-23:hover{background-position:-196px;}
+
+#mainmenu li#menu-item-22{width:130px;font-weight:bold;}
+#mainmenu li#menu-item-22:hover{background-position:-396px;}
+
+#mainmenu li#menu-item-25{width:123px;font-weight:bold;}
+#mainmenu li#menu-item-25:hover{background-position:-526px;}
+
+html > body #mainmenu .menu-header li.current_page_item,html > body #mainmenu .menu-header li.current-page-ancestor{background:url(/wp-content/themes/BellaFlorV1.0/images/mainmenu-active.png) no-repeat;}
+html > body #mainmenu li.current_page_item#menu-item-28,html > body #mainmenu li.current-page-ancestor#menu-item-28 {background-position:0px;} html > body #mainmenu li.current_page_item#menu-item-28 a,html > body #mainmenu li.current-page-ancestor#menu-item-28 a{color:#fff;}
+html > body #mainmenu li.current_page_item#menu-item-191,html > body #mainmenu li.current-page-ancestor#menu-item-191 {background-position:-65px;} html > body #mainmenu li.current_page_item#menu-item-191 a,html > body #mainmenu li.current-page-ancestor#menu-item-191 a{color:#fff;}
+html > body #mainmenu li.current_page_parent#menu-item-191{background:url(/wp-content/themes/BellaFlorV1.0/images/mainmenu-active.png) no-repeat;background-position:-65px;} html > body #mainmenu li.current_page_parent#menu-item-191 a{color:#fff;}
+html > body #mainmenu li.current_page_item#menu-item-23,html > body #mainmenu li.current-page-ancestor#menu-item-23  {background-position:-165px;} html > body #mainmenu li.current_page_item#menu-item-23 a,html > body #mainmenu li.current-page-ancestor#menu-item-23 a{color:#fff;}
+html > body #mainmenu li.current_page_item#menu-item-22,html > body #mainmenu li.current-page-ancestor#menu-item-22 {background-position:-364px;} html > body #mainmenu li.current_page_item#menu-item-22 a,html > body #mainmenu li.current_page_item#menu-item-22 a{color:#fff;}
+html > body #mainmenu li.current_page_item#menu-item-25,html > body #mainmenu li.current-page-ancestor#menu-item-25 {background-position:-526px;} html > body #mainmenu li.current_page_item#menu-item-25 a,html > body #mainmenu li.current_page_item#menu-item-25 a{color:#fff;}
+#mainmenu li a span{font-weight:bold;}
+/* =Content
+-------------------------------------------------------------- */
+
+#main {
+	overflow: hidden;
+	padding: 10px 0 0 0;
+}
+#content {
+
+}
+#content,
+#content input,
+#content textarea {
+	color: #000;
+	font-size: 12px;
+	line-height: 1.4em;
+}
+#content p,
+#content ul,
+#content ol,
+#content dd,
+#content pre,
+#content hr {
+	margin-bottom:24px;
+}
+#content ul ul,
+#content ol ol,
+#content ul ol,
+#content ol ul {
+	margin-bottom:0;
+}
+#content pre,
+#content kbd,
+#content tt,
+#content var {
+	font-size: 15px;
+	line-height: 21px;
+}
+#content code {
+	font-size: 13px;
+}
+#content dt,
+#content th {
+	color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+	color: #000;
+	margin: 0 0 15px 0;
+	line-height: 1.5em;
+}
+#content table {
+	border: 1px solid #e7e7e7;
+	text-align: left;
+	margin: 0 -1px 24px 0;
+	width: 100%;
+}
+#content tr th,
+#content thead th {
+	color: #888;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+	padding: 9px 24px;
+}
+#content tr td {
+	border-top: 1px solid #e7e7e7;
+	padding: 6px 24px;
+}
+#content tr.odd td {
+	background: #F2F7FC;
+}
+.hentry {
+	margin: 0 0 15px 0;
+}
+.home .sticky {
+	background: #F2F7FC;
+	border-top: 4px solid #000;
+	padding: 18px 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+.single .hentry {
+	margin: 0 0 36px 0;
+}
+.page-title {
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+}
+.page-title span {
+	color: #333;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: normal;
+}
+.page-title a:link,
+.page-title a:visited {
+	color:#888;
+	text-decoration: none;
+}
+.page-title a:active,
+.page-title a:hover {
+	color: #FF4B33;
+}
+#content .entry-title {
+	color: #000;
+	font-size: 21px;
+	line-height: 1.3em;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.entry-title a:link,
+.entry-title a:visited {
+	color:#000;
+	text-decoration: none;
+}
+.entry-title a:active,
+.entry-title a:hover {
+	color: #FF4B33;
+}
+.entry-meta {
+	color: #888;
+	font-size: 12px;
+}
+.entry-meta abbr,
+.entry-utility abbr {
+	border: none;
+}
+.entry-meta abbr:hover,
+.entry-utility abbr:hover {
+	border-bottom: 1px dotted #666;
+}
+.entry-content,
+.entry-summary {
+	clear: both;
+	padding: 0;
+}
+#content .entry-summary p:last-child {
+	margin-bottom: 12px;
+}
+.entry-content fieldset {
+	border: 1px solid #E7E7E7;
+	margin: 0 0 24px 0;
+	padding: 24px;
+}
+.entry-content fieldset legend {
+	background: #fff;
+	color: #000;
+	font-weight: bold;
+	padding: 0 24px;
+}
+.entry-content input {
+	margin: 0 0 24px 0;
+}
+.entry-content input.file,
+.entry-content input.button {
+	margin-right: 24px;
+}
+.entry-content label {
+	color: #888;
+	font-size: 12px;
+}
+.entry-content select {
+	margin: 0 0 24px 0;
+}
+.entry-content sup,
+.entry-content sub {
+	font-size: 10px;
+}
+.entry-content blockquote.left {
+	float: left;
+	margin-left: 0;
+	margin-right: 24px;
+	text-align: right;
+	width: 33%;
+}
+.entry-content blockquote.right {
+	float: right;
+	margin-left: 24px;
+	margin-right: 0;
+	text-align: left;
+	width: 33%;
+}
+.page-link {
+	color: #000;
+	font-weight:bold;
+	margin:0 0 22px 0;
+	word-spacing:0.5em;
+}
+.page-link a:link,
+.page-link a:visited {
+	background: #f1f1f1;
+	color:#333;
+	font-weight:normal;
+	padding:0.5em 0.75em;
+	text-decoration:none;
+}
+.home .sticky .page-link a {
+	background: #D9E8F7;
+}
+.page-link a:active,
+.page-link a:hover {
+	color: #FF4B33;
+}
+.page .edit-link {
+	clear: both;
+	display: block;
+}
+#entry-author-info {
+	background: url(/wp-content/themes/BellaFlorV1.0/images/post-h1-separator.gif) top center no-repeat;
+	padding: 35px 20px 0px;
+	margin: 24px 0;
+	overflow: hidden;
+	clear: both;
+	font-size: 14px;
+	line-height: 20px;
+}
+#entry-author-info #author-avatar {
+	background: #fff;
+	border-right: 2px solid #e7e7e7;
+	border-bottom: 2px solid #e7e7e7;
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 8px 8px 22px 8px;
+	height: 60px;
+	display:inline;
+}
+#entry-author-info #author-description {
+	float: left;
+	margin: 0 0 0 0;
+	width:480px;
+}
+#entry-author-info h2 {
+	color: #000;
+	font-weight: bold;
+	font-size: 100%;
+	margin-bottom: 0;
+}
+.entry-utility {
+	color: #888;
+	font-size: 12px;
+	line-height: 18px;
+	clear: both;
+}
+.entry-meta a,
+.entry-utility a {
+	color: #888;
+}
+.entry-meta a:hover,
+.entry-utility a:hover {
+	color: #FF4B33;
+}
+#content .video-player {
+	padding: 0;
+}
+
+
+
+/* Asides
+-------------------------------------------------------------- */
+
+.home #content .category-asides p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	margin-top:0;
+}
+.home .hentry.category-asides {
+	padding: 0;
+}
+.home #content .category-asides .entry-content {
+	padding-top: 0;
+}
+
+
+
+
+/* Gallery listing
+-------------------------------------------------------------- */
+
+.category-gallery {
+	margin-bottom: 48px;
+}
+.category-gallery h2 {
+	margin-top: 10px;
+}
+.category-gallery .entry-meta {
+}
+.category-gallery .size-thumbnail img {
+	border: 10px solid #f1f1f1;
+	margin-bottom: 0;
+}
+.category-gallery .gallery-thumb {
+	float: left;
+	margin-right:20px;
+	margin-top: -4px;
+}
+.home #content .category-gallery .entry-content p {
+	display: inline;
+}
+.home #content .category-gallery .entry-utility {
+	padding-top:4px;
+}
+
+
+/* Attachment pages
+-------------------------------------------------------------- */
+
+.entry-content .attachment img {
+	margin-bottom: 0;
+}
+.attachment .entry-content .entry-caption {
+	font-size: 140%;
+	margin-top: 24px;
+}
+.attachment .entry-content .nav-previous a:before {
+	content: '\2190\00a0';
+}
+.attachment .entry-content .nav-next a:after {
+	content: '\00a0\2192';
+}
+
+
+
+/* Images
+-------------------------------------------------------------- */
+
+#content img {
+	margin: 0;
+	max-width: 640px;
+}
+#content .attachment img {
+	max-width: 900px;
+}
+#content .alignleft,
+#content img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 4px;
+}
+#content .alignright,
+#content img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+	margin-top: 4px;
+}
+#content .aligncenter,
+#content img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#content img.alignleft, 
+#content img.alignright, 
+#content img.aligncenter {
+	margin-bottom: 12px;
+}
+#content .wp-caption {
+	background: #f1f1f1;
+	line-height: 18px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 4px;
+}
+#content .wp-caption img {
+	margin: 5px 5px 0;
+}
+#content .wp-caption p.wp-caption-text {
+	margin: 5px;
+	color: #888;
+	font-size: 12px;
+}
+#content .wp-smiley {
+	margin:0;
+}
+#content .gallery {
+	margin: auto;
+}
+#content .gallery .gallery-item {
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	width: 33%;
+}
+#content .gallery img {
+	border: 2px solid #cfcfcf;
+}
+#content .gallery .gallery-caption {
+	color: #888;
+	font-size: 12px;
+	margin: 0 0 12px;
+}
+#content .gallery dl {
+	margin: 0;
+}
+#content .gallery img {
+	border: 10px solid #f1f1f1;
+}
+#content .gallery br+br {
+	display: none;
+}
+
+
+
+/* =Navigation
+-------------------------------------------------------------- */
+
+.navigation {
+	font-size:  12px;
+	line-height: 18px;
+	overflow: hidden;
+	color: #888;
+}
+.navigation a:link,
+.navigation a:visited {
+	color: #888;
+	text-decoration: none;
+}
+.navigation a:active,
+.navigation a:hover {
+	color: #FF4B33;
+}
+.nav-previous {
+	float: left;
+	width: 50%;
+}
+.nav-next {
+	float: right;
+	width: 50%;
+	text-align:right;
+}
+#nav-above {
+	margin: 0 0 18px 0;
+}
+#nav-above {
+	display: none;
+}
+.paged #nav-above,
+.single #nav-above {
+	display: block;
+}
+#nav-below {
+	margin: -18px 0 0 0;
+}
+
+
+
+/* =Comments
+-------------------------------------------------------------- */
+#comments {
+	clear: both;
+}
+#comments .navigation {
+	padding: 0 0 18px 0;
+}
+h3#comments-title,
+h3#reply-title {
+	color: #000;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 0;
+}
+h3#comments-title {
+	padding: 24px 0;
+}
+.commentlist {
+	list-style: none;
+	margin: 0;
+}
+.commentlist li.comment {
+	border-bottom: 1px solid #e7e7e7;
+	line-height: 24px;
+	margin: 0 0 24px 0;
+	padding: 0 0 0 56px;
+	position: relative;
+}
+.commentlist li:last-child {
+	border-bottom:none;
+	margin-bottom:0;
+}
+#comments .comment-body ul,
+#comments .comment-body ol {
+	margin-bottom: 18px;
+}
+#comments .comment-body p:last-child {
+	margin-bottom: 6px;
+}
+#comments .comment-body blockquote p:last-child {
+	margin-bottom: 24px;
+}
+.commentlist ol {
+	list-style: decimal;
+}
+.commentlist .avatar {
+	float:left;
+	width:40px;
+	margin-right:10px;
+}
+.comment-author {
+}
+.comment-author cite {
+	color: #000;
+	font-style: normal;
+	font-weight: bold;
+}
+.comment-author .says {
+	font-style: italic;
+}
+.comment-meta {
+	font-size: 12px;
+	margin: 0 0 18px 0;
+}
+.comment-meta a:link,
+.comment-meta a:visited {
+	color: #888;
+	text-decoration: none;
+}
+.comment-meta a:active,
+.comment-meta a:hover {
+	color: #FF4B33;
+}
+.commentlist .even {
+}
+.commentlist .bypostauthor {
+}
+.comment-body{margin-left:50px;}
+.reply {
+	font-size: 12px;
+	padding: 0 0 24px 0;
+	margin-left:50px;
+}
+.reply a,
+a.comment-edit-link {
+	color: #888;
+}
+.reply a:hover,
+a.comment-edit-link:hover {
+	color: #FF4B33;
+}
+.commentlist .children {
+	list-style: none;
+	margin: 0;
+}
+.commentlist .children li {
+	border: none;
+	margin: 0;
+}
+.nopassword,
+.nocomments {
+	display: none;
+}
+#comments .pingback {
+	margin-bottom: 18px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #e7e7e7;
+}
+.commentlist li.comment+li.pingback {
+	margin-top: -6px;
+}
+#comments .pingback p {
+	color: #888;
+	font-size: 12px;
+	line-height: 18px;
+	display:block;
+	margin: 0;
+}
+#comments .pingback .url {
+	font-style: italic;
+	font-size: 13px;
+}
+
+
+
+/* Comments form */
+input[type=submit] {
+	color: #333;
+}
+#respond {
+	margin: 24px 0;
+	border-top: 1px solid #e7e7e7;
+	overflow: hidden;
+	position: relative;
+}
+#respond p {
+	margin: 0;
+}
+#respond .comment-notes {
+	margin-bottom: 1em;
+}
+.form-allowed-tags {
+	line-height: 1em;
+}
+.children #respond {
+	margin: 0 48px 0 0;
+}
+h3#reply-title {
+	margin: 18px 0;
+}
+#comments-list #respond {
+	margin: 0 0 18px 0;
+}
+#comments-list ul #respond {
+	margin: 0;
+}
+#cancel-comment-reply-link {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+}
+#respond .required {
+	color:#FF4B33;
+	font-weight:bold;
+}
+#respond label {
+	color: #888;
+	font-size: 12px;
+}
+#respond input {
+	margin:0 0 9px;
+	width:98%;
+}
+#respond textarea {
+	width:98%;
+}
+#respond .form-allowed-tags {
+	color: #888;
+	font-size: 12px;
+	line-height: 18px;
+}
+#respond .form-allowed-tags code {
+	font-size: 11px;
+}
+#respond .form-submit {
+	margin: 12px 0;
+}
+#respond .form-submit input {
+	width: auto;
+	font-size: 14px;
+}
+
+
+/* =Widget Areas
+-------------------------------------------------------------- */
+
+.widget-area ul {
+	list-style: none;
+	margin-left: 0;
+}
+.widget-area ul ul {
+	list-style: square;
+	margin-left: 1.3em;
+}
+.widget_search #s { /* This keeps the search inputs in line */
+	width: 60%;
+}
+.widget_search label {
+	display:none;
+}
+.widget-container {
+	margin: 0 0 18px 0;
+}
+li.widget-container{list-style-type:none;text-indent:0;margin:0;margin-bottom:15px;padding:0;float:left;display:inline;}
+.widget-title {
+	color: #222;
+	font-weight: bold;
+}
+.widget-area a:link,
+.widget-area a:visited {
+	text-decoration: none;
+}
+.widget-area a:active,
+.widget-area a:hover {
+	text-decoration: underline;
+}
+.widget-area .entry-meta {
+	font-size: 11px;
+}
+#wp_tag_cloud div {
+	line-height: 1.6em;
+}
+#wp-calendar {
+	width:100%;
+}
+#wp-calendar caption {
+	font-weight: bold;
+	color: #222;
+	text-align: left;
+	font-size:14px;
+	padding-bottom: 4px;
+}
+#wp-calendar thead {
+	font-size:11px;
+}
+#wp-calendar thead th {
+}
+#wp-calendar tbody {
+	color: #aaa;
+}
+#wp-calendar tbody td {
+	padding: 3px 0 2px;
+	background: #f5f5f5;
+	border:1px solid #fff;
+	text-align: center;
+}
+#wp-calendar tbody .pad {
+	background: none;
+}
+#wp-calendar tfoot #next {
+	text-align: right;
+}
+.widget_rss a.rsswidget {
+	color: #000;
+}
+.widget_rss a.rsswidget:hover {
+	color: #FF4B33;
+}
+.widget_rss .widget-title img {
+	height: 11px;
+	width: 11px;
+}
+
+/* Main sidebars */
+#main .widget-area ul {
+	margin-left: 0;
+	padding: 0 00px 0 0;
+}
+#main .widget-area ul ul {
+	border: none;
+	margin-left: 1.3em;
+	padding: 0;
+}
+#primary {
+}
+#secondary {
+}
+
+/* Footer widget areas */
+#footer-widget-area {
+}
+
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#footer {
+	margin-bottom: 20px;
+}
+#colophon {
+	border-top: 4px solid #000;
+	margin-top: -4px;
+	padding: 18px 0;
+	overflow: hidden;
+}
+#site-info {
+	font-weight: bold;
+}
+#site-info a {
+	color: #000;
+	text-decoration: none;
+}
+#site-generator {
+	position: relative;
+	font-style: italic;
+}
+#site-generator a {
+	color: #666;
+	display:inline-block;
+	text-decoration: none;
+	background: url(/wp-content/themes/BellaFlorV1.0/images/wordpress.png) center left no-repeat;
+	padding-left: 20px;
+	line-height: 16px;
+}
+#site-generator a:hover {
+	text-decoration: underline;
+}
+img#wpstats {
+	display:block;
+	margin: 0 auto 10px;
+}
+
+
+
+/* Mobile Safari ( iPad, iPhone and iPod Touch )
+-------------------------------------------------------------- */
+
+pre {
+	-webkit-text-size-adjust: 140%;
+}
+code {
+	-webkit-text-size-adjust: 160%;
+}
+#access,
+.entry-meta,
+.entry-utility,
+.navigation,
+.widget-area {
+	-webkit-text-size-adjust: 120%;
+}
+#site-description {
+	-webkit-text-size-adjust: none;
+}
+
+
+
+/* =Print Style
+-------------------------------------------------------------- */
+
+@media print {
+	body {
+		background:none !important;
+	}
+	#wrapper {
+		float: none !important;
+		clear: both !important;
+		display: block !important;
+		position: relative !important;
+	}
+	#header {
+		border-bottom: 2pt solid #000;
+		padding-bottom: 18pt;
+	}
+	#colophon {
+		border-top: 2pt solid #000;
+	}
+	#site-title,
+	#site-description {
+		float: none;
+		margin: 0;
+		padding:0;
+		line-height: 1.4em;
+	}
+	#site-title {
+		font-size: 13pt;
+	}
+	.entry-content {
+		font-size: 14pt;
+		line-height: 1.6em;
+	}
+	.entry-title {
+		font-size: 21pt;
+	}
+	#access,
+	#branding img,
+	#respond,
+	.comment-edit-link,
+	.edit-link,
+	.navigation,
+	.page-link,
+	.widget-area {
+		display: none !important;
+	}
+	#container,
+	#header,
+	#footer {
+		width: 100%;
+		margin: 0;
+	}
+	#content,
+	.one-column #content {
+		width: 100%;
+		margin: 24pt 0 0;
+	}
+	.wp-caption p {
+		font-size: 11pt;
+	}
+	#site-info,
+	#site-generator {
+		float: none;
+		width: auto;
+	}
+	#colophon {
+		width: auto;
+	}
+	img#wpstats {
+		display:none
+	}
+	#site-generator a {
+		padding: 0;
+	margin: 0;
+	}
+	#entry-author-info {
+		border: 1px solid #e7e7e7;
+	}
+	#main {
+		display:inline;
+	}
+	.home .sticky {
+		border: none;
+	}
+}
+/* STARTICS HOME: FOOTER */ 
+#footer{background:url(/wp-content/themes/BellaFlorV1.0/images/footer-bg.jpg) no-repeat;height:244px;width:1001px;border:none;margin:0 auto;}
+p.fbf_info{position:absolute;color:#fff;width:160px;top:25px;left:220px;line-height:normal;}
+p.fbf_copyrights{position:absolute;color:#fff;bottom:1px;left:37px;line-height:normal;width:930px;margin-bottom:9px;}
+.subscribe{background:url(/wp-content/themes/BellaFlorV1.0/images/subscribeButton.png) no-repeat; width:143px;height:19px;position:absolute;top:154px;left:48px;}
+.search_wrapper{position:absolute;top:149px;left:221px;width:170px;}
+input#s{line-height:18px;width:140px;}
+input#searchsubmit{position:absolute;right:0;}
+p.fbf_copyrights span{display:inline;float:right;text-transform:uppercase;font-family:"helvetica","lucida grande",geneva,arial;font-size:9px;}
+p.fbf_copyrights span a{color:#fff;}
+p.fbf_copyrights span.alignright{position:absolute;right:0;}
+
+.footer-sticks{width:177px;height:150px;overflow:hidden;position:absolute;margin-right:203px;right:0;margin-top:55px;font-size:12px;color:#000;}
+.footer-sticks li a{color:#000;text-decoration:none;} .footer-sticks li a:hover{text-decoration:underline;}
+.footer-sticks li{list-style-type:none;font-size:14px;font-weight:bold;}
+.footer-sticks li li{list-style-type:none;font-size:12px;margin-top:5px;font-weight:normal;}
+#footer-stick2{margin-right:23px;}
+#footer-stick3{margin-right:410px;}
+
+/* STARTICS PARENT PAGE: SIDEBAR LEFT */
+#ParentPage-SideBarLeft-paper{width:200px;float:left;margin-right:0px;overflow:hidden;}
+#ParentPage-SideBarLeft-paper div.top{height:34px;width:200px;background:url(/wp-content/themes/BellaFlorV1.0/images/parent-page-sidebar-left-paper-top.png) no-repeat;}
+#ParentPage-SideBarLeft-paper div.middle{width:180px;background:url(/wp-content/themes/BellaFlorV1.0/images/parent-page-sidebar-left-paper-middle.png) repeat-y;padding:10px;padding-top:0;}
+#ParentPage-SideBarLeft-paper div.bottom{height:25px;width:200px;background:url(/wp-content/themes/BellaFlorV1.0/images/parent-page-sidebar-left-paper-bottom.png) no-repeat;}
+
+#ParentPage-SideBarLeft-paper h2{font-weight:bold;font-size:16px;}
+#ParentPage-SideBarLeft-paper ul{list-style-type:none;margin-left:0;}
+#ParentPage-SideBarLeft-paper ul.children{margin-left:15px;margin-bottom:15px;}
+#ParentPage-SideBarLeft-paper li{margin-left:0px;list-style-position:inside;text-indent:10px;padding-left:0;padding-bottom:3px;float:left;display:inline;width:170px;}
+#ParentPage-SideBarLeft-paper a{color:#111;text-decoration:none;}
+#ParentPage-SideBarLeft-paper ul li a{font-weight:bold;}
+#ParentPage-SideBarLeft-paper ul li {padding-top:10px;clear:both;}
+#ParentPage-SideBarLeft-paper ul li li{padding-top:1px;clear:both;width:160px;}
+#ParentPage-SideBarLeft-paper ul li li a{font-weight:normal;}
+#ParentPage-SideBarLeft-paper ul li.current_page_item a,#ParentPage-SideBarLeft-paper ul li.current-cat a{background:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-SideBarLeft-Current.gif) 8px 10px no-repeat;}
+#ParentPage-SideBarLeft-paper ul li.current_page_item li a{background:none;}
+#ParentPage-SideBarLeft-paper li.current_page_item li a{font-weight:normal;}
+#ParentPage-SideBarLeft-paper .current_page_item a{font-weight:bold;}
+#ParentPage-SideBarLeft-paper li.current_page_parent a{font-weight:bold;}
+#ParentPage-SideBarLeft-paper li.current_page_parent li a{font-weight:normal;}
+#ParentPage-SideBarLeft-paper a span{font-weight:bold;}
+#ParentPage-SideBarLeft-paper a:hover{text-decoration:underline;}
+#ParentPage-SideBarLeft-paper li.current_page_parent a:hover,#ParentPage-SideBarLeft-paper li.current_page_item a:hover{text-decoration:none;}
+#ParentPage-SideBarLeft-paper li.current_page_item ul.children li a:hover{text-decoration:underline;}
+#ParentPage-SideBarLeft-paper h2.blog-categories{text-transform:uppercase;text-align:left;margin-left:25px;font-style:italic;color:#666;;}
+
+/* STARTICS PARENT PAGE: CONTENT */
+#contentx.inner-page{width:490px;float:left;overflow:hidden;} /* ie bug alert */
+#content.parent-page{width:490px;float:left;overflow:hidden;}
+
+#content.parent-page div.top,#contentx.inner-page div.top{width:442px;padding: 0 25px;margin:0;height:154px;background:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-Content-top.png) no-repeat;}
+#content.parent-page div#post-18.top,#content.parent-page div#post-20.top{width:442px;padding: 0 25px;height:154px;background:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-Content-top.png) no-repeat;}
+#content.parent-page div.middle,#contentx.inner-page div.middle{width:442px;background:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-Content-middle.png) repeat-y;padding: 0 25px 10px;}
+#content.parent-page div.bottom,#contentx.inner-page div.bottom{width:492px;height:130px;background:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-Content-bottom.png) no-repeat;}
+
+#content.parent-page div#post-20.top{background-image:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-Content-top20.png);}
+#content.parent-page div#post-18.top{background-image:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-Content-top18.png);}
+
+#content.parent-page h1{font-weight:normal;font-size:25px;text-transform:uppercase;margin-left:20px;}
+
+#contentx.inner-page div.top{height:6px;font-size:0px;}
+#contentx.inner-page h1,#content.parent-page h1.entry-title{font-weight:normal;font-size:20px;text-transform:uppercase;margin-left:0px;font-weight:bold;width:auto;line-height:25px;}
+#contentx.inner-page h1{padding-top:25px;}
+#contentx.inner-page #archive.middle h1{padding-top:0px;}
+
+#content.parent-page div#post-18 h1.entry-title{padding:0;padding-left:5px;width:200px;font-weight:bold;}
+#content.parent-page div#post-20 h1.entry-title{padding:0;padding-left:5px;width:200px;font-weight:bold;}
+
+.pageAncestor-18 #contentx.inner-page h1 span{color:#C52C61;}
+.pageAncestor-20 #contentx.inner-page h1 span {color:#98BE19;}
+
+#content.parent-page div.top{float:left;}
+/* STARTICS PARENT PAGE: SIDEBAR RIGHT */
+#ParentPage-SideBarRight{width:250px;float:right;display:inline;margin:0;padding:0;overflow:hidden;}
+
+
+/* STARTICS PARENT PAGE: CONNECT */
+li#ParentPage-Connect{background:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-ConnectBG.png) no-repeat; width:233px;height:60px;padding-top:60px;padding-left:17px;float:left;margin-bottom:10px;}
+#ParentPage-Connect div.connect_icon{background:url(/wp-content/themes/BellaFlorV1.0/images/connect-icons.png) no-repeat;width:35px;height:35px;float:left;margin-right:10px;}
+#ParentPage-Connect #connect-2{background-position:-42px 0;}
+#ParentPage-Connect #connect-3{background-position:-84px 0;}
+#ParentPage-Connect #connect-4{background-position:-126px 0;}
+#ParentPage-Connect #connect-5{background-position:-168px 0;}
+
+
+h1#post-18.entry-title span{color:#000;display:block;}
+h1#post-14.entry-title{color:#bf0012;font-weight:bold;display:block;}
+h1#post-18.entry-title{color:#c52c61;font-weight:bold;display:block;}
+h1#post-20.entry-title{color:#98be19;font-weight:bold;display:block;}
+div#content.parent-page h1#post-20{margin-left:0;}
+
+div#content.parent-page h1{width:180px;float:left;font-size:25px;line-height:25px;margin-top:0;margin-left:15px;display:inline;font-weight:bold;}
+div#content.parent-page h3{width:218px;float:right;color:#666;font-size:15px;font-style:italic;margin:0;line-height:17px;}
+
+div#content .parent-pageBottom{background:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-sepHeading.gif) bottom center no-repeat;height:20px;}
+div#content tr td{margin:0; padding:0;vertical-align:middle;border:0;padding-top:14px;}
+div#content table.parent-pageTitle{border:0;background:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-seph1.gif) 200px 20px no-repeat;height:135px;margin-bottom:0;}
+
+div#content #post-20.top table.parent-pageTitle{background-image:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-seph1-20.gif);}
+div#content #post-18.top table.parent-pageTitle{background-image:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-seph1-18.gif);}
+
+/* STARTICS PARENT PAGE: CHILDREN PAGES LISTING */
+#content.parent-page .thumb .polaroid img{background:url(/wp-content/themes/BellaFlorV1.0/images/img-polaroid.png) no-repeat;padding:8px 9px 50px;margin-right:9px;width:200px;height:130px;}
+#content.parent-page .thumb .polaroid {float:left;}
+#content.parent-page .thumb{clear:both;margin:0px 0 20px;float:left;}
+#content.parent-page .thumb h3{float:left;width:100%;font-size:16px;text-transform:uppercase;font-weight:bold;margin-bottom:15px;margin-top:15px;}
+#content.parent-page .thumb h3 a{color:#000;text-decoration:none;font-style:normal;}
+#content.parent-page .thumb h3 a:hover{color:#656565;}
+#content.parent-page .thumb p{color:#666;font-size:13px;}
+#content.parent-page .thumb .rightcol{width:215px;float:left;height:185px;overflow:hidden;}
+
+#contentx.inner-page img.size-medium{background:url(/wp-content/themes/BellaFlorV1.0/images/img-polaroid.png) no-repeat;padding:8px 8px 48px;margin-right:10px;width:200px;height:130px;}
+#contentx.inner-page img.alignleft{float:left;margin:0 10px 10px 0;padding-bottom:50px;padding-right:9px;}
+#contentx.inner-page img.alignright{float:right;margin:0 0 10px 10px;padding-bottom:50px;padding-right:9px;}
+#contentx.inner-page img.size-full,#contentx.inner-page img.size-large{padding:9px;padding-right:8px;background:#fff;border-right:2px solid #f0f0f0;border-bottom:2px solid #f0f0f0;width:423px;height:auto;margin:10px 0;}
+
+.pageAncestor-18 #content.parent-page h3 a span{color:#C52C61;}
+.pageAncestor-20 #content.parent-page h3 a span{color:#98BE19;}
+
+.pageAncestor-18 #content.parent-page .thumb h3 a:hover{color:#666;}
+.pageAncestor-18 #content.parent-page .thumb h3 a:hover span{color:#666;}
+
+#page-wrapper #content .middle a.readmore{color:#FF0000;text-decoration:underline;}
+#page-wrapper #content .middle a.readmore:hover{text-decoration:underline;}
+
+
+/* STARTICS BLOG LAYOUT */
+#page-wrapper.blog-layout #ParentPage-SideBarLeft-paper{float:right;}
+#page-wrapper.blog-layout #contentx.inner-page{width:690px;float:left;overflow:hidden;}
+#page-wrapper.blog-layout #contentx.inner-page div.pagination{float:right;clear:both;margin-right:15px;}
+div.pagination #wp_page_numbers{}
+div.pagination #wp_page_numbers ul{}
+
+
+.blog-layout #contentx.inner-page div.top{width:640px;padding: 0 20px;margin:0;height:6px;background:url(/wp-content/themes/BellaFlorV1.0/images/blog-paper-top.jpg) no-repeat;}
+.blog-layout #contentx.inner-page div.middle{width:650px;background:url(/wp-content/themes/BellaFlorV1.0/images/blog-paper-middle.jpg) repeat-y;padding: 25px 10px 10px 20px;}
+.blog-layout #contentx.inner-page div.bottom{width:640px;padding:0 20px;height:140px;background:url(/wp-content/themes/BellaFlorV1.0/images/blog-paper-bottom.jpg) no-repeat;}
+
+.blog-element{width:190px;height:111px;margin-bottom:10px;float:left;margin-right:10px;position:relative;overflow:hidden}
+.blog-element{background:url(/wp-content/themes/BellaFlorV1.0/images/blog-element-img.jpg) no-repeat; padding:5px 8px 60px 7px;}
+.blog-element .polaroid img{position:absolute;}
+.blog-element h3{margin-top:115px;text-transform:uppercase;line-height:14px;font-size:13px;}
+.blog-element h3 a{text-decoration:none;color:#006295;font-weight:bold;}
+.blog-element h3 a:hover{text-decoration:underline;}
+
+#description.blog-element {background:none;padding-right:10px;background:url(/wp-content/themes/BellaFlorV1.0/images/blog-sep.gif) top right no-repeat;}
+#description.blog-element h1{margin:0 0 10px;padding-top:0;color:#006295;}
+#description.blog-element p{color:#666;font-size:16px;font-style:italic;padding-right:10px;}
+
+.blog-layout #ParentPage-SideBarLeft-paper{width:250px;}
+.blog-layout #ParentPage-SideBarLeft-paper div.top{background:url(/wp-content/themes/BellaFlorV1.0/images/blog-sidepaper-top.jpg) no-repeat;width:250px;}
+.blog-layout #ParentPage-SideBarLeft-paper div.middle{background:url(/wp-content/themes/BellaFlorV1.0/images/blog-sidepaper-middle.jpg) repeat-y;width:230px;}
+.blog-layout #ParentPage-SideBarLeft-paper div.bottom{background:url(/wp-content/themes/BellaFlorV1.0/images/blog-sidepaper-bottom.jpg) no-repeat;width:250px;}
+
+#contentx.inner-page #archive.middle .polaroid{float:right;}
+#contentx.inner-page #archive.middle .polaroid img{background:url(/wp-content/themes/BellaFlorV1.0/images/img-polaroid.png) no-repeat;padding:8px 9px 50px;margin-right:9px;width:200px;height:130px;}
+#contentx.inner-page #single.middle h1{padding-top:0;margin-bottom:10px;}
+.entry-date{text-transform:capitalize;}
+h2{font-size:16px;font-weight:bold;clear:both;margin-bottom:10px;}
+#archive-left{width:410px;float:left;}
+
+
+/* STARTICS BLOG POST */
+#contentx.inner-page #single.middle .thumb .polaroid img{background:url(/wp-content/themes/BellaFlorV1.0/images/post-polaroid.png) no-repeat;padding:8px 9px 50px;margin-right:15px;width:243px;height:160px;}
+#contentx.inner-page #single.middle .polaroid {float:left;}
+#contentx.inner-page #single.middle .thumb{clear:both;margin:0;float:left;}
+#contentx.inner-page #single.middle .thumb h3{float:left;width:100%;font-size:16px;text-transform:uppercase;font-weight:bold;margin-bottom:15px;margin-top:15px;}
+#contentx.inner-page #single.middle .thumb h3 a{color:#000;text-decoration:none;font-style:normal;}
+#contentx.inner-page #single.middle .thumb h3 a:hover{color:#656565;}
+#contentx.inner-page #single.middle .thumb p{color:#666;font-size:16px; font-style:italic;margin-top:10px;padding:0;}
+#contentx.inner-page #single.middle .thumb .rightcol{width:369px;float:left;height:185px;overflow:hidden;}
+
+#contentx.inner-page #single.middle .entry-meta{text-transform:capitalize;font-style:italic;margin-bottom:10px;}
+#contentx.inner-page #single.middle h1{color:#006295;clear:both;} #contentx.inner-page #single.middle h1 span{font-weight:normal;}
+#contentx.inner-page #single.middle .posted-by{font-style:italic;color:#666;}
+#contentx.inner-page #single.middle .posted-by a,#contentx.inner-page #single.middle .posted-by a:visited{text-decoration:none;color:#006295;} #contentx.inner-page #single.middle .posted-by a:hover{text-decoration:underline;}
+#contentx.inner-page #single.middle .post-separator {background:url(/wp-content/themes/BellaFlorV1.0/images/post-h1-separator.gif) bottom center no-repeat;width:640px;height:20px;clear:both;margin:10px auto 20px;padding:0;display:inline;float:left;height:15px;overflow:hidden;}
+
+/* STARTICS PAGE LAYOUT FIXED STYLES */
+#contentx.inner-page #page.middle{padding:25px;}
+#contentx.inner-page #page.middle .thumb .polaroid img{background:url(/wp-content/themes/BellaFlorV1.0/images/img-polaroid.png) no-repeat;padding:8px 9px 50px;margin-right:9px;width:200px;height:130px;}
+#contentx.inner-page #page.middle .thumb .polaroid {width:222px;float:left;clear:none;margin-right:15px;display:inline;}
+#contentx.inner-page #page.middle .thumb {height:188px;overflow:hidden;}
+#contentx.inner-page #page.middle .rightcol{float:left;display:inline;width:195px;}
+#contentx.inner-page #page.middle .post-separator {background:url(/wp-content/themes/BellaFlorV1.0/images/page-h1-separator.gif) bottom center no-repeat;width:440px;height:20px;clear:both;margin:10px auto 20px;padding:0;display:inline;float:left;}
+#contentx.inner-page #page.middle .thumb p{color:#666;font-size:16px; font-style:italic;margin-top:30px;padding:0;padding-top:30px;background:url(/wp-content/themes/BellaFlorV1.0/images/page-description.gif) top center no-repeat;}
+
+.pageAncestor-18 #contentx.inner-page #page.middle .post-separator {background-image:url(/wp-content/themes/BellaFlorV1.0/images/page-h1-separator_18.gif);}
+.pageAncestor-18 #contentx.inner-page #page.middle .thumb p{background-image:url(/wp-content/themes/BellaFlorV1.0/images/page-description_18.gif);}
+.pageAncestor-20 #contentx.inner-page #page.middle .post-separator {background-image:url(/wp-content/themes/BellaFlorV1.0/images/page-h1-separator_20.gif)}
+.pageAncestor-20 #contentx.inner-page #page.middle .thumb p{background-image:url(/wp-content/themes/BellaFlorV1.0/images/page-description_20.gif);}
+#contentx.inner-page #page.middle h1{padding-top:0px;margin-bottom:20px;margin-top:0;}
+#contentx.inner-page #page.middle .contents {color:#333;font-size:14px;padding:0;line-height:1.5em;}
+
+#contentx.inner-page #page.middle .contents blockquote p{font-size:1.5em;line-height:1.5em;padding:0;background:url(/wp-content/themes/BellaFlorV1.0/images/post-blockquote-bottom.gif) right bottom no-repeat;padding-bottom:0px;padding-right:10px;color:#006295;}
+#contentx.inner-page #page.middle .contents blockquote {background:url(/wp-content/themes/BellaFlorV1.0/images/page-blockquote-top.gif) left top no-repeat;margin:0 10px;padding:10px;padding-bottom:0;}
+
+.pageAncestor-18 #contentx.inner-page #page.middle .contents blockquote p{font-size:1.5em;line-height:1.5em;padding:0;background:url(/wp-content/themes/BellaFlorV1.0/images/page-blockquote-bottom_18.gif) right bottom no-repeat;padding-bottom:0px;padding-right:10px;color:#C52C61;}
+.pageAncestor-18 #contentx.inner-page #page.middle .contents blockquote {background:url(/wp-content/themes/BellaFlorV1.0/images/page-blockquote-top_18.gif) left top no-repeat;margin:0 10px;padding:10px;padding-bottom:0;}
+.pageAncestor-20 #contentx.inner-page #page.middle .contents blockquote p{font-size:1.5em;line-height:1.5em;padding:0;background:url(/wp-content/themes/BellaFlorV1.0/images/page-blockquote-bottom_20.gif) right bottom no-repeat;padding-bottom:0px;padding-right:10px;color:#98BE19;}
+.pageAncestor-20 #contentx.inner-page #page.middle .contents blockquote {background:url(/wp-content/themes/BellaFlorV1.0/images/page-blockquote-top_20.gif) left top no-repeat;margin:0 10px;padding:10px;padding-bottom:0;}
+
+.floatright{float:right;}
+
+/* STARTICS PAGE BLOG POSTS */
+#pageBlogPosts div.top{background:url(/wp-content/themes/BellaFlorV1.0/images/page-blog-posts-top.jpg) no-repeat;height:12px;padding:0;margin:0;font-size:2px;}
+#pageBlogPosts div.middle{background:url(/wp-content/themes/BellaFlorV1.0/images/page-blog-posts-middle.jpg) repeat-y;width:160px;padding:0 20px;overflow:hidden;}
+#pageBlogPosts div.bottom{background:url(/wp-content/themes/BellaFlorV1.0/images/page-blog-posts-bottom.jpg) top no-repeat;height:25px;}
+#pageBlogPosts div.middle li{list-style-type:none;margin:0;padding:0;text-indent:0;margin-top:10px;}
+#pageBlogPosts h2{font-size:15px;line-height:1.4em;margin:15px 0 5px;text-transform:uppercase;}
+#pageBlogPosts h4{font-size:11px;line-height:1.1em;margin-bottom:5px;}
+#pageBlogPosts p.blog-post-intro{font-size:11px;line-height:1.2em;margin-bottom:0;}
+#pageBlogPosts a.readmore,#pageBlogPosts a.blogmore{font-size:11px;color:#006295;}
+#pageBlogPosts a.blogmore{font-style:italic;float:right;}
+
+div#comments a:hover{text-decoration:none;}
+
+/* STARTICS 404 */
+body.error404 .entry-content{position: relative;}
+body.error404 .search_wrapper404{float:left;position: relative;margin-top:15px;width:170px;}
+
+/* STARTICS TEXT STYLES */
+#contentx.inner-page .post-layout p{color:#333;font-size:14px;padding:0;line-height:1.5em;}
+#contentx.inner-page .post-layout blockquote p{font-size:1.5em;line-height:1.5em;padding:0;background:url(/wp-content/themes/BellaFlorV1.0/images/post-blockquote-bottom.gif) right bottom no-repeat;padding-bottom:0px;padding-right:10px;color:#006295;}
+#contentx.inner-page .post-layout blockquote {background:url(/wp-content/themes/BellaFlorV1.0/images/post-blockquote-top.gif) left top no-repeat;margin:0 70px;padding:10px;padding-bottom:0;}
+#contentx.inner-page .post-layout .entry-content,#contentx.inner-page .post-layout .-content{padding:0 30px;}
+#contentx.inner-page .post-layout a{color:#006295;text-decoration:none} #contentx.inner-page .post-layout a:visited{text-decoration:none;color:#006295;} #contentx.inner-page .post-layout a:hover{text-decoration:underline;} 
+#contentx.inner-page #archive h1.page-title{color:#006295;}
+ul.tagcloud{text-transform:lowercase;}
+
+#footer-top {
+	background: url("/wp-content/themes/BellaFlorV1.0/images/body-bg.png") repeat-y scroll 0 0 #FFFFFF;
+    border: medium none;
+    margin: 0 auto;
+    width: 1001px;
+}
+
+#gray-frame{
+	border-top:#d5d4d1 1px solid;
+	padding:10px;
+	width:957px;
+	margin-left:12px;
+	color:#757471;
+}
+#gray-frame .textwidget{float:left;text-align:left;}
+#gray-frame h2{float:left;clear:none;width:260px;}
+#gray-frame .textwidget img{margin-bottom:10px;margin-left:100px;}
+
+}
+
+#contentx.inner-page .post-layout #comments a:hover {text-decoration:none}
+
+body#newsletter h1{font-size:20px;font-weight:bold;text-transform:uppercase;margin:0 0 20px;}
+body#newsletter h1 span{color:#006295;}
+body#newsletter #footer-newsletter a{color:#fff;}
+body#newsletter td{padding:4px;}
+body#newsletter .required{color:#006295;}
+body#newsletter #wrapper{width:755px;background-image:url(/wp-content/themes/BellaFlorV1.0/images/wrapper-newsletter.jpg);}
+/*
+div#content.parent-page h1{width:150px;float:left;_position: relative; _top: -50%;font-size:25px;line-height:25px;margin-top:0;}
+div#content.parent-page h3{width:230px;float:right;color:#666;font-size:15px;font-style:italic;padding-left:20px;margin:0;line-height:15px;_position: relative; _top: -50%}
+div.entry-content{padding-top:20px;}
+
+.entryTitleWrapper{display: table; height: 110px; padding-bottom:20px;width: 100%; _position: relative; overflow: hidden;background:url(/wp-content/themes/BellaFlorV1.0/images/ParentPage-sepTitle.gif) 185px 5px no-repeat}
+.entryTitleContainer{ _position: absolute; _top: 50%; display: table-cell; vertical-align: middle;}
+

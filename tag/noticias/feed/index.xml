@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Noticias &#8211; Fundación Bella Flor</title>
+	<atom:link href="/tag/noticias/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Entidad sin ánimo de lucro. Ciudad Bolívar, Bogotá, Colombia</description>
+	<lastBuildDate>Tue, 27 Feb 2018 22:03:28 +0000</lastBuildDate>
+	<language>es-ES</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.5</generator>
+	<item>
+		<title>Nuevo Proyecto: Foto Parche</title>
+		<link>/2010/08/nuevo-proyecto-foto-parche/</link>
+		<pubDate>Thu, 05 Aug 2010 03:45:14 +0000</pubDate>
+		<dc:creator><![CDATA[Ana María Araos Casas]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Noticias]]></category>
+
+		<guid isPermaLink="false">/?p=461</guid>
+		<description><![CDATA[Este año se consolidó en Fundación Bella Flor el Club de Fotografía, bajo el nombre de Fotoparche. Este grupo es  la evolución más reciente del grupo de los jóvenes de la Fundación.  El taller se planteo de modo que los &#8230; <a href="/2010/08/nuevo-proyecto-foto-parche/">Continuar leyendo <span class="meta-nav">&#187;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Este año se consolidó en Fundación Bella Flor el Club de Fotografía, bajo el nombre de Fotoparche. Este grupo es  la evolución más reciente del grupo de los jóvenes de la Fundación.  El taller se planteo de modo que los chicos utilizaran estos equipos para captar los momentos de la Fundación, sus entornos y sus vidas mientras mejoraran sus habilidades con la nueva tecnología.</p>
+<p>Después de construir el grupo de jóvenes durante los últimos dos años, se desarrolló la idea del Fotoparche, cuyos objetivos principales son:</p>
+<ul>
+<li>Formar los jóvenes en los asuntos que van a enfrentar en el mundo adulto</li>
+<li>Crear artistas jóvenes a través del manejo de nueva tecnología</li>
+<li>A través de las salidas facilitar que los jóvenes ejercen sus derechos ciudadanos</li>
+</ul>
+<p>Los talleres se desarrollan los viernes en la tarde, allí se inicia preguntando al grupo sus experiencias buenas y desagradables de la semana, en la primera hora se hace un taller basado en un tema real de sus vidas, construyendo conocimiento a través de las experiencias personales y fortaleciendo con información de instituciones pertinentes. Luego  se explican las técnicas más importantes de la Fotografía como son: Luz, foco, composición y se establece un tema por taller, de esta manera la magia, el movimiento, los rostros e incluso la familia se convierten en los protagonistas de las imágenes.</p>
+<blockquote><p>A los chicos les encanta salir a la loma, caminar por los espacios verdes, tomar fotos de la naturaleza, de sus amigos, de las calles y de lo que ellos llaman su mundo.</p></blockquote>
+<h2>Y el resultado??</h2>
+<p>Luego de todo un año de trabajo, La Fundación se encuentra preparando una gran exposición con el trabajo artístico de los jóvenes. Postales, tarjetas y afiches serán algunas de las piezas que se exhibirán en el mes de octubre.</p>
+<p>Así que desde ahora los invitamos a apoyar esta gran iniciativa social que una vez más nos demostrará que los sueños SI son posibles!!!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

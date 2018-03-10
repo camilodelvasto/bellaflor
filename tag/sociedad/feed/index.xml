@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sociedad &#8211; Fundación Bella Flor</title>
+	<atom:link href="/tag/sociedad/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Entidad sin ánimo de lucro. Ciudad Bolívar, Bogotá, Colombia</description>
+	<lastBuildDate>Tue, 27 Feb 2018 22:03:28 +0000</lastBuildDate>
+	<language>es-ES</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.5</generator>
+	<item>
+		<title>Ascensos y descensos en la reproducción social</title>
+		<link>/2010/07/ascensos-y-descensos-en-la-reproduccion-social/</link>
+		<pubDate>Mon, 26 Jul 2010 17:54:51 +0000</pubDate>
+		<dc:creator><![CDATA[Ana María Araos Casas]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Desigualdad]]></category>
+		<category><![CDATA[Investigaciones]]></category>
+		<category><![CDATA[sociedad]]></category>
+
+		<guid isPermaLink="false">/?p=182</guid>
+		<description><![CDATA[“En este artículo se revisan los planteamientos teóricos alrededor de los cuales surge y se desarrolla el concepto de movilidad social. Se repasan las distintas acepciones de este concepto y los resultados de investigaciones empíricas sobre el tema en la &#8230; <a href="/2010/07/ascensos-y-descensos-en-la-reproduccion-social/">Continuar leyendo <span class="meta-nav">&#187;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>“En este artículo se revisan los planteamientos teóricos alrededor de los cuales surge y se desarrolla el concepto de movilidad social. Se repasan las distintas acepciones de este concepto y los resultados de investigaciones empíricas sobre el tema en la literatura internacional, en América Latina y en Colombia.”</p>
+<p>Ver artículo completo en: <a href="http://www.javeriana.edu.co/sociales/universitas/documents/3lamovilidadsocial.pdf">http://www.javeriana.edu.co/sociales/universitas/documents/3lamovilidadsocial.pdf</a></p>
+<p>Autor:</p>
+<p>Uribe, C (2005)</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>
